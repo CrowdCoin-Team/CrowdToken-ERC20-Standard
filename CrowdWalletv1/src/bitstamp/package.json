@@ -1,0 +1,54 @@
+{
+  "_from": "bitstamp",
+  "_id": "bitstamp@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-zB54NbLvBkORsNiDJrRqaG29coW+RwYzxwUGjGpwbOzFw45Ngi5uGdIz2OnRGr+rLpoHHxJ/oCiGA/B245D26Q==",
+  "_location": "/bitstamp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bitstamp",
+    "name": "bitstamp",
+    "escapedName": "bitstamp",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bitstamp/-/bitstamp-1.0.2.tgz",
+  "_shasum": "edf1eb1248cc6503a5ebc1f5b8a56352e93c1775",
+  "_spec": "bitstamp",
+  "_where": "/home/mqt",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/askmike/bitstamp/issues",
+    "email": "mike@mvr.me"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "underscore": "1.4.4"
+  },
+  "deprecated": false,
+  "description": "Bitstamp REST API wrapper",
+  "engines": {
+    "node": ">= 0.7"
+  },
+  "homepage": "https://github.com/askmike/bitstamp#readme",
+  "keywords": [
+    "bitstamp",
+    "btc",
+    "bitcoin"
+  ],
+  "license": "MIT",
+  "main": "bitstamp.js",
+  "name": "bitstamp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askmike/bitstamp.git"
+  },
+  "version": "1.0.2"
+}

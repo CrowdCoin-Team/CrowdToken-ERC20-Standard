@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Crowd Token Wallet</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:300,400,500,700|Material+Icons' rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="public/favicon-32x32.png" sizes="32x32">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="./node_modules/web3/dist/web3.min.js"></script>
+  <script>
+      var web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
+      web3.eth.defaultAccount = web3.eth.accounts[0];
+
+      var Contract = web3.eth.contract([{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"_totalSupply","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"_totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"RATE","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"createTokens","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"address"}],"name":"allowance","outputs":[{"name":"remaining","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":false,"name":"indexed_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"indexed_owner","type":"address"},{"indexed":false,"name":"indexed_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}]);
+      //var Crowd = CrowdTokenContract.at('xxxxxxxxxxxxxxxxxxxxxxxx');
+      var Crowd = Contract.at('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+      var input = document.getElementById('input');
+      var button = document.getElementById('button');
+      var output = document.getElementById('output');
+
+      button.addEventListener('click', function(){
+          Crowd.setCrowd(input.value);
+
+          output.inner.HTML = web3.toAscii(Crowd.getCrowd());
+      });
+
+  </script>
+  <script>
+
+      var Bitstamp = require('./bitstamp/bitstamp.js');
+
+      var publicBitstamp = new Bitstamp();
+
+      // publicBitstamp.transactions('btceur', {time: 'hour'}, console.log);
+      // publicBitstamp.ticker('btceur', console.log);
+      // publicBitstamp.ticker_hour('btceur', console.log);
+      // publicBitstamp.order_book('btcusd', false, console.log);
+      // publicBitstamp.eur_usd(console.log);
+
+      var key = 'your-key';
+      var secret = 'your-secret';
+      var client_id = 'your-bitstamp-user-id';
+      var timeout = 10000;
+      var privateBitstamp = new Bitstamp(key, secret, client_id, timeout);
+
+      //    commented out for your protection
+
+      // privateBitstamp.balance(null, console.log);
+      // privateBitstamp.user_transactions('btceur', {limit: 10, offset: 5, sort: 'asc'}, console.log);
+      // privateBitstamp.open_orders('btcusd', console.log);
+      // privateBitstamp.order_status(id, console.log);
+      // privateBitstamp.cancel_order(id, console.log);
+      // privateBitstamp.cancel_all_orders(console.log)
+      // privateBitstamp.buy('btcusd', amount, price, limit_price, console.log);
+      // privateBitstamp.sell('btcusd', amount, price, limit_price, console.log);
+      // privateBitstamp.withdrawal_requests(console.log);
+      // privateBitstamp.bitcoin_withdrawal(amount, address, console.log);
+      // privateBitstamp.bitcoin_deposit_address(console.log);
+      // privateBitstamp.unconfirmed_btc(console.log);
+      // privateBitstamp.ripple_withdrawal(amount, address, currency);
+      // privateBitstamp.ripple_address(console.log);
+      // privateBitstamp.transfer_to_main(amount, currency, subAccount, console.log);
+      // privateBitstamp.transfer_from_main(amount, currency, subAccount, console.log);
+
+  </script>
+  <!--<script src="ajaxy.js"></script>-->
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="/dist/build.js"></script>
+
+</body>
+
+</html>

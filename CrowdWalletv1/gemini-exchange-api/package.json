@@ -1,0 +1,67 @@
+{
+  "_from": "gemini-exchange-api",
+  "_id": "gemini-exchange-api@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-H1SdETDNeEDX6LJ69ZGfStKJvtk=",
+  "_location": "/gemini-exchange-api",
+  "_phantomChildren": {
+    "ctype": "0.5.3",
+    "json-stringify-safe": "5.0.1",
+    "mime": "1.2.11",
+    "node-uuid": "1.4.8",
+    "punycode": "1.4.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "gemini-exchange-api",
+    "name": "gemini-exchange-api",
+    "escapedName": "gemini-exchange-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gemini-exchange-api/-/gemini-exchange-api-1.0.4.tgz",
+  "_shasum": "1f549d1130cd7840d7e8b27af5919f4ad289bed9",
+  "_spec": "gemini-exchange-api",
+  "_where": "/home/mqt",
+  "author": {
+    "name": "Gabriel Ferrin",
+    "email": "garf11235813@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/keatingl777/gemini-exchange-api/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": "Nick Addison, Leon Keating",
+  "dependencies": {
+    "request": "~2.30.0"
+  },
+  "deprecated": false,
+  "description": "node.js wrapper for gemini cryptocurrency exchange, based on https://github.com/gferrin/bitfinex.git",
+  "gypfile": true,
+  "homepage": "https://github.com/keatingl777/gemini-exchange-api#readme",
+  "keywords": [
+    "gemini",
+    "bitfinex",
+    "litecoin",
+    "bitcoin",
+    "cryptocurrency",
+    "exchange"
+  ],
+  "main": "lib/gemini.js",
+  "name": "gemini-exchange-api",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keatingl777/gemini-exchange-api.git"
+  },
+  "scripts": {
+    "build": "coffee --bare --compile *.coffee",
+    "prepublish": "coffee --output lib --compile src"
+  },
+  "version": "1.0.4"
+}
