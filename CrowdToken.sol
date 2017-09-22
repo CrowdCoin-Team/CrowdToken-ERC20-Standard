@@ -13,7 +13,7 @@ interface IERC20 {
 contract CrowdToken is IERC20 {
     
     using SafeMath for uint256;
-    uint public _totalSupply = 10000000;
+    uint private _totalSupply = 10000000;
     
     string public constant symbol ="CRCN";
     string public constant name = "Crowd Token";
@@ -23,7 +23,6 @@ contract CrowdToken is IERC20 {
     uint256 public constant RATE = 350;
     
     address public owner;
-    
     
     
     mapping(address => uint256) balances;
@@ -47,10 +46,11 @@ contract CrowdToken is IERC20 {
         owner.transfer(msg.value);
     }
         
-    function totalSupply() constant returns (uint256 _totalSupply) {
+   function totalSupply() constant returns (uint256) {
         return _totalSupply;
-        
     }
+        
+
     
     function balanceOf(address _owner) constant returns (uint256 balance) {
         return balances[_owner]; 
