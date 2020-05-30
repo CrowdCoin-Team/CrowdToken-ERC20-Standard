@@ -39,7 +39,7 @@
   "bundleDependencies": false,
   "contributors": "Nick Addison, Leon Keating",
   "dependencies": {
-    "request": "~2.30.0"
+    "request": "~2.88.0"
   },
   "deprecated": false,
   "description": "node.js wrapper for gemini cryptocurrency exchange, based on https://github.com/gferrin/bitfinex.git",
