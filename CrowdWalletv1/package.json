@@ -1,14 +1,28 @@
 {
-  "name": "Crowd-Wallet",
-  "description": "Demo Solidity project for CrowdToken",
-  "version": "1.0.0",
-  "author": "Andrew Kamal",
-  "private": false,
+  "name": "crowdtoken-demo-wallet",
+  "version": "1.0.2",
+  "description": "ERC20 Token wallet utilize SafeMath, DAOs & Web3",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --hot --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrowdCoin-Team/CrowdToken-ERC20-Standard.git"
+  },
+  "keywords": [
+    "ERC20",
+    "Demo",
+    "Token",
+    "Wallet",
+    "Blockchain",
+    "DAPPs",
+    "Smart",
+    "Applications"
+  ],
+    "dependencies": {
     "embark": "^2.5.2",
     "embark-framework": "^1.2.1",
     "vue": "^2.3.4",
@@ -29,5 +43,11 @@
     "vue-template-compiler": "^2.4.2",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^3.1.11"
-  }
+  },
+  "author": "Andrew Magdy Kamal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrowdCoin-Team/CrowdToken-ERC20-Standard/issues"
+  },
+  "homepage": "https://github.com/CrowdCoin-Team/CrowdToken-ERC20-Standard#readme"
 }
