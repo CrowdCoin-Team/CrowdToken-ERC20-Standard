@@ -23,7 +23,7 @@
     "Applications"
   ],
     "dependencies": {
-    "embark": "^2.5.2",
+    "embark": "^6.0.0",
     "embark-framework": "^1.2.1",
     "vue": "^2.3.4",
     "vuetify": "^0.13.0"
