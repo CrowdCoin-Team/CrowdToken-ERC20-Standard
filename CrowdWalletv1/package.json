@@ -39,7 +39,7 @@
     "sass-loader": "^13.2.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vue-loader": "^11.3.4",
+    "vue-loader": "^17.2.2",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^5.75.0",
     "webpack-dev-server": "^3.1.11"
