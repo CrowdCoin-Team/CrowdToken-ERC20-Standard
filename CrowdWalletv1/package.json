@@ -25,8 +25,8 @@
     "dependencies": {
     "embark": "^6.0.0",
     "embark-framework": "^1.2.1",
-    "vue": "^2.3.4",
-    "vuetify": "^0.13.0"
+    "vue": "^3.5.12",
+    "vuetify": "^3.7.3"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
