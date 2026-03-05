@@ -30,7 +30,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "underscore": "1.4.4"
+    "underscore": "1.13.8"
   },
   "deprecated": false,
   "description": "Bitstamp REST API wrapper",
